@@ -30,7 +30,7 @@ function Memory() {
                 return () => clearTimeout(timeOutId);
             },1000);
         }
-    }, [selectedTiles]);
+    }, [selectedTiles,board,matchedTiles]);
     
     //restart game
     const restartGame = () => {
